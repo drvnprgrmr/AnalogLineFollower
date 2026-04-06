@@ -1517,7 +1517,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4148WS"
+		(symbol "Diode:1N4001"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1539,7 +1539,7 @@
 					)
 				)
 			)
-			(property "Value" "1N4148WS"
+			(property "Value" "1N4001"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1549,18 +1549,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SOD-323"
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1571,7 +1560,18 @@
 					)
 				)
 			)
-			(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
+			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1615,7 +1615,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*SOD?323*"
+			(property "ki_fp_filters" "D*DO?41*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1626,7 +1626,7 @@
 					)
 				)
 			)
-			(symbol "1N4148WS_0_1"
+			(symbol "1N4001_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
@@ -1664,7 +1664,7 @@
 					)
 				)
 			)
-			(symbol "1N4148WS_1_1"
+			(symbol "1N4001_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1905,9 +1905,8 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:2N7002"
+		(symbol "Transistor_FET:IRLB8721PBF"
 			(pin_names
-				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -1926,7 +1925,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "2N7002"
+			(property "Value" "IRLB8721PBF"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1937,7 +1936,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 				(at 5.08 -1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1950,7 +1949,7 @@
 					(justify left)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(property "Datasheet" "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591"
 				(at 5.08 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1962,7 +1961,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(property "Description" "62A Id, 30V Vds, 8.7 mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1973,7 +1972,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "N-Channel Switching MOSFET"
+			(property "ki_keywords" "N-Channel HEXFET MOSFET Logic-Level"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1984,7 +1983,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_fp_filters" "TO?220*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1995,7 +1994,7 @@
 					)
 				)
 			)
-			(symbol "2N7002_0_1"
+			(symbol "IRLB8721PBF_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -2139,7 +2138,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
 					)
 					(stroke
 						(width 0)
@@ -2162,7 +2161,7 @@
 					)
 				)
 			)
-			(symbol "2N7002_1_1"
+			(symbol "IRLB8721PBF_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2182,9 +2181,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "S"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2200,9 +2199,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "D"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2803,6 +2802,12 @@
 		(uuid "2bd13dbe-0f76-4f7c-a61d-ff9880475a64")
 	)
 	(junction
+		(at 129.54 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "406e7098-d5cd-4e7c-8b66-162be412feaa")
+	)
+	(junction
 		(at 106.68 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2819,12 +2824,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d3daf8f-3b5c-431a-b589-f1279a467692")
-	)
-	(junction
-		(at 121.92 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6030eb77-590c-445a-b733-b6190a4f3adc")
 	)
 	(junction
 		(at 114.3 24.13)
@@ -2857,16 +2856,16 @@
 		(uuid "790bf663-435b-43ea-859a-096cd9e92129")
 	)
 	(junction
-		(at 128.27 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7bafb21c-55c0-463b-bac2-a75d3ca65d03")
-	)
-	(junction
 		(at 214.63 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d1cf9bd-4fc8-4250-8f89-17ff7b7095e8")
+	)
+	(junction
+		(at 124.46 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9444a5bf-ed2f-4eef-a361-e5926bf026b5")
 	)
 	(junction
 		(at 92.71 54.61)
@@ -2875,16 +2874,16 @@
 		(uuid "9940e458-0a5a-432e-8899-bf443404631f")
 	)
 	(junction
-		(at 128.27 24.13)
+		(at 124.46 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b54355bd-8e69-466d-896e-f9e6871124b3")
+		(uuid "bec4dd14-3d7b-4db1-9b29-74b9bcfd53b9")
 	)
 	(junction
-		(at 121.92 133.35)
+		(at 129.54 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c7ae9469-bab5-4dc8-a76c-6ede34706706")
+		(uuid "ccebcfe2-13b3-419b-b9c2-bbdd3140d877")
 	)
 	(junction
 		(at 90.17 54.61)
@@ -2950,6 +2949,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 114.3) (xy 124.46 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "144b9fb6-51c0-4084-b29c-53aefbee7ca7")
+	)
+	(wire
+		(pts
 			(xy 227.33 95.25) (xy 227.33 90.17)
 		)
 		(stroke
@@ -2960,7 +2969,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 24.13) (xy 128.27 24.13)
+			(xy 114.3 24.13) (xy 129.54 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3020,7 +3029,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 24.13) (xy 128.27 24.13)
+			(xy 144.78 24.13) (xy 129.54 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3030,7 +3039,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 133.35) (xy 121.92 128.27)
+			(xy 124.46 133.35) (xy 124.46 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3150,7 +3159,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 43.18) (xy 128.27 43.18)
+			(xy 114.3 43.18) (xy 129.54 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3160,7 +3169,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 114.3) (xy 121.92 114.3)
+			(xy 138.43 114.3) (xy 124.46 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3200,7 +3209,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 43.18) (xy 128.27 36.83)
+			(xy 129.54 43.18) (xy 129.54 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3210,7 +3219,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 43.18) (xy 128.27 43.18)
+			(xy 144.78 43.18) (xy 129.54 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3277,16 +3286,6 @@
 			(type default)
 		)
 		(uuid "7d599b65-fc9d-406c-b9f4-bf7e757f78cc")
-	)
-	(wire
-		(pts
-			(xy 121.92 120.65) (xy 121.92 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80320166-9710-4582-959b-32ca1c483385")
 	)
 	(wire
 		(pts
@@ -3510,7 +3509,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 133.35) (xy 121.92 133.35)
+			(xy 138.43 133.35) (xy 124.46 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3610,7 +3609,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 29.21) (xy 128.27 24.13)
+			(xy 129.54 29.21) (xy 129.54 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3750,7 +3749,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 114.3) (xy 121.92 114.3)
+			(xy 106.68 114.3) (xy 124.46 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3780,7 +3779,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 133.35) (xy 121.92 133.35)
+			(xy 106.68 133.35) (xy 124.46 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3859,7 +3858,7 @@
 		(uuid "6af9be1d-d75d-48b4-b8ff-bb284a6deb99")
 	)
 	(label "sense1"
-		(at 67.31 38.1 0)
+		(at 60.96 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4346,6 +4345,110 @@
 			(project "mainboard"
 				(path "/0bccd670-a314-4405-8548-b6216461f974"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4001")
+		(at 124.46 124.46 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18a7645e-c74a-4589-af66-5b9cc5825530")
+		(property "Reference" "D?"
+			(at 127 123.1899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4001"
+			(at 127 125.7299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 124.46 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 124.46 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
+			(at 124.46 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 124.46 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 124.46 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d2223e06-517b-497d-a3d3-ff82f0129a7a")
+		)
+		(pin "1"
+			(uuid "cc0bda99-6ac0-4477-a66b-40c38dc654e0")
+		)
+		(instances
+			(project "mainboard"
+				(path "/0bccd670-a314-4405-8548-b6216461f974"
+					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -5911,6 +6014,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:IRLB8721PBF")
+		(at 104.14 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d04d22d-38a8-41e9-a378-209d57de875b")
+		(property "Reference" "Q?"
+			(at 110.49 143.5099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRLB8721PBF"
+			(at 110.49 146.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 109.22 146.685 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591"
+			(at 109.22 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "62A Id, 30V Vds, 8.7 mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220"
+			(at 104.14 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "83b7eb6a-edfd-4696-a3b8-f4bed3933348")
+		)
+		(pin "2"
+			(uuid "efd58553-1575-4727-81e2-d60fb6e639bf")
+		)
+		(pin "1"
+			(uuid "bee02abb-dc5d-486e-91db-42e2460db4cc")
+		)
+		(instances
+			(project "mainboard"
+				(path "/0bccd670-a314-4405-8548-b6216461f974"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 105.41 63.5 90)
 		(unit 1)
@@ -6076,8 +6267,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 128.27 33.02 270)
+		(lib_id "Transistor_FET:IRLB8721PBF")
+		(at 111.76 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6086,9 +6277,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "99e464ea-7077-4187-8297-5c27e6c265ad")
-		(property "Reference" "D1"
-			(at 130.81 31.7499 90)
+		(uuid "9a7284ea-65a8-4027-9636-2a0b0315f7d7")
+		(property "Reference" "Q?"
+			(at 118.11 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6098,8 +6289,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4148WS"
-			(at 130.81 34.2899 90)
+		(property "Value" "IRLB8721PBF"
+			(at 118.11 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6109,8 +6300,33 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 123.825 33.02 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 116.84 56.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591"
+			(at 116.84 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "62A Id, 30V Vds, 8.7 mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220"
+			(at 111.76 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6120,8 +6336,60 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 128.27 33.02 0)
+		(pin "3"
+			(uuid "fc9517bf-d4a9-4e4a-8769-37e11c6854ae")
+		)
+		(pin "2"
+			(uuid "203c4e61-ce9d-43d5-865f-00f7c3529814")
+		)
+		(pin "1"
+			(uuid "5608cb5d-e7d3-40aa-81c4-6ea0edf6027f")
+		)
+		(instances
+			(project "mainboard"
+				(path "/0bccd670-a314-4405-8548-b6216461f974"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4001")
+		(at 129.54 33.02 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a26769d7-20ff-4ccb-9ddc-28567e5ea800")
+		(property "Reference" "D?"
+			(at 132.08 31.7499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4001"
+			(at 132.08 34.2899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 129.54 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6131,8 +6399,19 @@
 				)
 			)
 		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 128.27 33.02 0)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 129.54 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
+			(at 129.54 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6143,7 +6422,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 128.27 33.02 0)
+			(at 129.54 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6154,7 +6433,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 128.27 33.02 0)
+			(at 129.54 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6164,16 +6443,16 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "54a886d1-4d38-4ba5-a993-f6062adf7a55")
-		)
 		(pin "2"
-			(uuid "e2f6cb47-0305-4f40-bcbf-6ece5379f605")
+			(uuid "373a99ac-e6ba-4206-8de4-a3493ece2cd2")
+		)
+		(pin "1"
+			(uuid "f019bd36-885b-4d80-9230-614f275668f8")
 		)
 		(instances
 			(project "mainboard"
 				(path "/0bccd670-a314-4405-8548-b6216461f974"
-					(reference "D1")
+					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -6814,94 +7093,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 111.76 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bcea6dcb-9d8b-4003-acdc-4e3f02bd1b66")
-		(property "Reference" "Q1"
-			(at 118.11 53.3399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 118.11 55.8799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 116.84 56.515 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 116.84 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 111.76 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6c37dce5-0873-4c6c-bc24-10525827a03d")
-		)
-		(pin "2"
-			(uuid "fea9e53b-3624-4a95-a6e6-8ea805d0336e")
-		)
-		(pin "3"
-			(uuid "3fbb3f20-f7c1-4795-aba8-4065b193da26")
-		)
-		(instances
-			(project "mainboard"
-				(path "/0bccd670-a314-4405-8548-b6216461f974"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+BATT")
 		(at 231.14 62.23 0)
 		(unit 1)
@@ -7058,110 +7249,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148WS")
-		(at 121.92 124.46 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d44a5e24-bf6e-42ac-b0db-8018c48b0ad1")
-		(property "Reference" "D2"
-			(at 124.46 123.1899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4148WS"
-			(at 124.46 125.7299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 117.475 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
-			(at 121.92 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
-			(at 121.92 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 121.92 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 121.92 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f549f909-1c01-4ce5-8ee8-f5e94a4e779e")
-		)
-		(pin "2"
-			(uuid "7efe1520-772a-430e-a0f1-762c83ce596c")
-		)
-		(instances
-			(project "mainboard"
-				(path "/0bccd670-a314-4405-8548-b6216461f974"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 214.63 110.49 0)
 		(unit 1)
@@ -7312,94 +7399,6 @@
 			(project "mainboard"
 				(path "/0bccd670-a314-4405-8548-b6216461f974"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 104.14 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d83b4e1e-4056-4038-aa2e-be79bd425d5a")
-		(property "Reference" "Q2"
-			(at 110.49 143.5099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 110.49 146.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 109.22 146.685 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 109.22 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 104.14 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f6e8565-f043-498a-8452-ef7ab97375d2")
-		)
-		(pin "2"
-			(uuid "42a33fd6-9cb3-4139-823a-3b571009880d")
-		)
-		(pin "3"
-			(uuid "aa90a231-96cd-478b-9984-625fe487a18e")
-		)
-		(instances
-			(project "mainboard"
-				(path "/0bccd670-a314-4405-8548-b6216461f974"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
